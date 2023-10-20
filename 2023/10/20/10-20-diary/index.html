@@ -16,15 +16,15 @@
   <meta name="author" content="Minwoo Son">
   <meta name="keywords" content="">
   
-    <meta name="description" content="안녕하세요. 손민우입니다. 블로그 테스트 중입니다.">
+    <meta name="description" content="10월 20일 (금) 클린코드 특강이광운 멘토님 —실제 실무에서는 더 단순한 것이 지켜지지 않아서 고통받는다—  Clean Code 깨끗한 코드란? (회사, 생태계…) 프로그래머 일과 (새로운 코드를 짜기 보다 오래된 코드를 읽는 경우가 많다.) 어떤 프로젝트를 진행하면서 이전보다 이후가 더 깔끔해야 한다.(보이스카우트 원칙) 이미 지저분한 코드를 볼 경우">
 <meta property="og:type" content="article">
 <meta property="og:title" content="10_20_diary">
 <meta property="og:url" content="http://example.com/2023/10/20/10-20-diary/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="안녕하세요. 손민우입니다. 블로그 테스트 중입니다.">
+<meta property="og:description" content="10월 20일 (금) 클린코드 특강이광운 멘토님 —실제 실무에서는 더 단순한 것이 지켜지지 않아서 고통받는다—  Clean Code 깨끗한 코드란? (회사, 생태계…) 프로그래머 일과 (새로운 코드를 짜기 보다 오래된 코드를 읽는 경우가 많다.) 어떤 프로젝트를 진행하면서 이전보다 이후가 더 깔끔해야 한다.(보이스카우트 원칙) 이미 지저분한 코드를 볼 경우">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2023-10-20T08:28:08.000Z">
-<meta property="article:modified_time" content="2023-10-20T08:29:38.453Z">
+<meta property="article:modified_time" content="2023-10-20T09:36:45.448Z">
 <meta property="article:author" content="Minwoo Son">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -114,7 +114,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                <span>Inicio</span>
+                <span>Startseite</span>
               </a>
             </li>
           
@@ -126,7 +126,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                <span>Archivo</span>
+                <span>Archiv</span>
               </a>
             </li>
           
@@ -138,7 +138,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                <span>Categorías</span>
+                <span>Kategorien</span>
               </a>
             </li>
           
@@ -150,7 +150,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                <span>Etiquetas</span>
+                <span>Schlagwörter</span>
               </a>
             </li>
           
@@ -162,7 +162,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                <span>Acerca</span>
+                <span>Über</span>
               </a>
             </li>
           
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          24 palabras
+          1.5k wörter
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 minutos
+          13 minuten
         
       </span>
     
@@ -272,7 +272,116 @@
             
               <div class="markdown-body">
                 
-                <p>안녕하세요. 손민우입니다. 블로그 테스트 중입니다.</p>
+                <h1 id="10월-20일-금-클린코드-특강"><a href="#10월-20일-금-클린코드-특강" class="headerlink" title="10월 20일 (금) 클린코드 특강"></a>10월 20일 (금) 클린코드 특강</h1><p>이광운 멘토님</p>
+<p>—실제 실무에서는 더 단순한 것이 지켜지지 않아서 고통받는다—</p>
+<ul>
+<li>Clean Code<ul>
+<li>깨끗한 코드란? (회사, 생태계…)</li>
+<li>프로그래머 일과 (새로운 코드를 짜기 보다 오래된 코드를 읽는 경우가 많다.)</li>
+<li>어떤 프로젝트를 진행하면서 이전보다 이후가 더 깔끔해야 한다.(보이스카우트 원칙)</li>
+<li>이미 지저분한 코드를 볼 경우에는 자신도 지저분한 코드를 짤 수 있다(깨진 유리창 원칙)</li>
+<li>YAGNI(YOU AREN’t gonna need it)</li>
+<li>컴퓨터가 이해할 수 있는 코드는 바보라도 짤 수 있다.<br>  유능한 프로그래머는 인간이 이해할 수 있는 코드를 짠다. - 마틴 파울러</li>
+</ul>
+</li>
+<li>CleanCode chatGPT<ul>
+<li>의미있는 이름<ul>
+<li>맥락을 훑어보지 않더라도 이해할 수 있어야 한다.</li>
+</ul>
+</li>
+<li><h2 id="테스트-테스트-작성으로-냄새-맡기-테스트-짜기-어렵다는-것은-유지-보수하기도-어렵다-핵심-로직-테스트가-더-중요하다-자동화된-테스트-테스트의-정도-→-두-발-뻗고-푹-잘-수-있는가-용기-안전망"><a href="#테스트-테스트-작성으로-냄새-맡기-테스트-짜기-어렵다는-것은-유지-보수하기도-어렵다-핵심-로직-테스트가-더-중요하다-자동화된-테스트-테스트의-정도-→-두-발-뻗고-푹-잘-수-있는가-용기-안전망" class="headerlink" title="테스트  - 테스트 작성으로 냄새 맡기  - 테스트 짜기 어렵다는 것은 유지 보수하기도 어렵다.  - 핵심 로직 테스트가 더 중요하다.  - 자동화된 테스트  - 테스트의 정도 → 두 발 뻗고 푹 잘 수 있는가?(용기, 안전망)"></a>테스트<br>  - 테스트 작성으로 냄새 맡기<br>  - 테스트 짜기 어렵다는 것은 유지 보수하기도 어렵다.<br>  - 핵심 로직 테스트가 더 중요하다.<br>  - 자동화된 테스트<br>  - 테스트의 정도 → 두 발 뻗고 푹 잘 수 있는가?(용기, 안전망)</h2></li>
+<li>간결성<ul>
+<li>keep it simple, stupid</li>
+<li>단순하게 짜야 유지보수 유리</li>
+<li>분기점 개수<ul>
+<li>분기점 4개 이하가 적당한 것 같다</li>
+</ul>
+</li>
+<li>복잡도<ul>
+<li>진짜 필요한 기능만 간결하게 짤 것</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>일관성<ul>
+<li>백 명이든 천 명이든 같잉 짠 것 처럼 작성해야 한다.</li>
+<li>이름, 서식, 코드 관례 등</li>
+<li>생산성, 유지 보수성, 테스트성, 안정성</li>
+</ul>
+</li>
+<li>주석<ul>
+<li>불필요한 주석</li>
+<li>잘못된 주석 (보이는 즉시 삭제)</li>
+<li>주석 코드 (보이는 즉시 삭제)</li>
+</ul>
+</li>
+<li>단일 책임 원칙</li>
+<li>중복 방지</li>
+<li>함수<ul>
+<li>작게 만들기</li>
+<li>복잡도 낮추기 (분기점 4개)</li>
+<li>파라미터 개수(4개)</li>
+<li>죽은 함수 제거</li>
+<li>하나의 일 잘하기</li>
+</ul>
+</li>
+<li>작은 함수와 메서드<ul>
+<li>작을 수록 좋다.</li>
+<li>밀러의 매직넘버 7 → 프로그래머의 뇌</li>
+<li>함수 15라인 → 유지보수 가능한 코딩의 기술, 자바편</li>
+<li>도메인 단위로 작게 만든다.</li>
+<li>놀라지 않게 하자. (함수명과 다른 행동을 하게 해서는 안된다.)</li>
+</ul>
+</li>
+<li>매직 넘버, 문자열</li>
+<li>버전 관리</li>
+<li>코드 중복<ul>
+<li>DRY(Don’t repeat yourself)</li>
+<li>악취 퍼레이드의 하이라이트는 중복 코드다. - 켄트 백, 마틴 파울러</li>
+<li>프로젝트 &#x3D; 생물</li>
+</ul>
+</li>
+<li>오류 처리<ul>
+<li>구체적</li>
+<li>예외 정보</li>
+</ul>
+</li>
+<li>의존성 주입</li>
+<li>리팩토링<ul>
+<li>지속적인 개선</li>
+<li>더 읽기 쉽게, 더 유지하기 쉽게, 더 효율적이게</li>
+</ul>
+</li>
+<li>클래스<ul>
+<li>SRP(단일 책임)</li>
+<li>ProductService<ul>
+<li>ProductQueryService</li>
+<li>ProductCommandService</li>
+<li>등 작고, 단순하고, 응집할 수 있게 쪼개서 만들어야 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>도구<ul>
+<li>sonarlint → 코드를 분석해서 어떠한 것을 고쳐야 하는지 알려줌</li>
+<li>sonarqube → 프로젝트를 진행할 때 사용하는 도구 (대쉬보드 지원)</li>
+<li>sonarcloud → 유료</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>정리<ul>
+<li>내 코드가 아니다.</li>
+<li>원칙들을 지키려고 노력하자</li>
+<li>관례를 따르자.</li>
+<li>나중은 오지 않는다.</li>
+<li>자동화된 테스트로 안전망을 만들자.</li>
+<li>도구의 도움을 받자.</li>
+</ul>
+</li>
+<li>I’m not a great programmer. I’m just a good programmer with great habits - Kent Beck</li>
+<li><h2 id="Q-A-지저분한-코드를-보고-어떻게-해야하는지-팁-지저분한-코드를-보고-리팩토링하려는-시도라도-하는-것이-좋을-것-같다-자신의-위치에서-최선을-다하는-것-saveProduct-productRepository-save-couponRepository-delete-이것을-각-각으로-분리해야-한다-읽기-팁-프로그램의-흐름을-다이어그램으로-그려-봐라-lucid-chart-같은-프로그램을-이용해서-그리면서-이해하면-좋다-개발자가-domain이-바뀌었을-때-어떻게-해야하는지-domain을-이해하려면-고객의-입장으로써-제품을-사용하고-이해해야-한다-코드를-보기-전에-제품을-이해해야-한다-고객-인터뷰를-보면서-제품을-이해해야-할-필요가-있다-내가-만든-서비스-제품-를-내가-사용해야-한다-개밥먹기-위의-내용들이-정석이-아닌-가이드라인이다-무조건적으로-따르는-것이-아닌-이러한-내용들을-작성하면서-유념해야-한다"><a href="#Q-A-지저분한-코드를-보고-어떻게-해야하는지-팁-지저분한-코드를-보고-리팩토링하려는-시도라도-하는-것이-좋을-것-같다-자신의-위치에서-최선을-다하는-것-saveProduct-productRepository-save-couponRepository-delete-이것을-각-각으로-분리해야-한다-읽기-팁-프로그램의-흐름을-다이어그램으로-그려-봐라-lucid-chart-같은-프로그램을-이용해서-그리면서-이해하면-좋다-개발자가-domain이-바뀌었을-때-어떻게-해야하는지-domain을-이해하려면-고객의-입장으로써-제품을-사용하고-이해해야-한다-코드를-보기-전에-제품을-이해해야-한다-고객-인터뷰를-보면서-제품을-이해해야-할-필요가-있다-내가-만든-서비스-제품-를-내가-사용해야-한다-개밥먹기-위의-내용들이-정석이-아닌-가이드라인이다-무조건적으로-따르는-것이-아닌-이러한-내용들을-작성하면서-유념해야-한다" class="headerlink" title="Q&amp;A  - 지저분한 코드를 보고 어떻게 해야하는지 팁      - 지저분한 코드를 보고 리팩토링하려는 시도라도 하는 것이 좋을 것 같다.      (자신의 위치에서 최선을 다하는 것)      - saveProduct &#x3D; productRepository.save() + couponRepository.delete()      이것을 각 각으로 분리해야 한다.  - 읽기 팁      - 프로그램의 흐름을 다이어그램으로 그려 봐라      - lucid chart 같은 프로그램을 이용해서 그리면서 이해하면 좋다.  - 개발자가 domain이 바뀌었을 때 어떻게 해야하는지      - domain을 이해하려면 고객의 입장으로써 제품을 사용하고 이해해야 한다.      - 코드를 보기 전에 제품을 이해해야 한다.      - 고객 인터뷰를 보면서 제품을 이해해야 할 필요가 있다.      - 내가 만든 서비스(제품)를 내가 사용해야 한다.(개밥먹기)  - 위의 내용들이 정석이 아닌 가이드라인이다. 무조건적으로 따르는 것이 아닌 이러한 내용들을 작성하면서 유념해야 한다."></a>Q&amp;A<br>  - 지저분한 코드를 보고 어떻게 해야하는지 팁<br>      - 지저분한 코드를 보고 리팩토링하려는 시도라도 하는 것이 좋을 것 같다.<br>      (자신의 위치에서 최선을 다하는 것)<br>      - saveProduct &#x3D; productRepository.save() + couponRepository.delete()<br>      이것을 각 각으로 분리해야 한다.<br>  - 읽기 팁<br>      - 프로그램의 흐름을 다이어그램으로 그려 봐라<br>      - lucid chart 같은 프로그램을 이용해서 그리면서 이해하면 좋다.<br>  - 개발자가 domain이 바뀌었을 때 어떻게 해야하는지<br>      - domain을 이해하려면 고객의 입장으로써 제품을 사용하고 이해해야 한다.<br>      - 코드를 보기 전에 제품을 이해해야 한다.<br>      - 고객 인터뷰를 보면서 제품을 이해해야 할 필요가 있다.<br>      - 내가 만든 서비스(제품)를 내가 사용해야 한다.(개밥먹기)<br>  - 위의 내용들이 정석이 아닌 가이드라인이다. 무조건적으로 따르는 것이 아닌 이러한 내용들을 작성하면서 유념해야 한다.</h2></li>
+</ul>
 
                 
               </div>
@@ -296,26 +405,26 @@
     <div class="license-meta">
       
         <div class="license-meta-item">
-          <div>Autor</div>
+          <div>Beitragsautor</div>
           <div>Minwoo Son</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
-          <div>Publicado el</div>
+          <div>Veröffentlicht am</div>
           <div>2023년 10월 20일</div>
         </div>
       
       
       
         <div class="license-meta-item">
-          <div>Licencia bajo</div>
+          <div>Urheberrechtshinweis</div>
           <div>
             
               
               
                 <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - Atribución">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
                     <i class="iconfont icon-by"></i>
                   </span>
                 </a>
@@ -341,7 +450,7 @@
                     
                       <a href="/2023/10/20/hello-world/" title="Hello World">
                         <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">Siguiente</span>
+                        <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -362,7 +471,7 @@
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
-    <span>Tabla de Contenidos</span>
+    <span>Inhaltsverzeichnis</span>
   </p>
   <div class="toc-body" id="toc-body"></div>
 </div>
@@ -418,7 +527,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Buscar</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -426,7 +535,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Palabra clave</label>
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -605,7 +714,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">El blog funciona mejor con JavaScript habilitado</div>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
   </noscript>
 </body>
 </html>
